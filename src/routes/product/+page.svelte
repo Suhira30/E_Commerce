@@ -23,7 +23,7 @@ let products=writable([]);
 let error=writable(null);
 
 const categories = ['Head Phone', 'Ear Buds', 'Wireless Speaker'];
-const color = ['Black', 'White','Red,Blue,Pink'];
+const color = ['Black', 'White','Red','Blue'];
 
 async function fetchProducts(){
   try{
@@ -56,7 +56,7 @@ const filteredProducts = derived([filterStore, products], ([$filterStore, $produ
 </script>
 
 <main class="flex">
-  <div class="w-full sm:w-1/4 p-4 bg-gray-100 h-screen sticky">
+  <div class="w-full sm:w-1/4 p-4 bg-gray-100 h-screen sticky top-0">
     <!-- <h2 class="text-xl font-bold mb-4">Filters</h2> -->
   
     <div class="mb-4 mt-10 ml-4 mr-4">
@@ -88,16 +88,20 @@ const filteredProducts = derived([filterStore, products], ([$filterStore, $produ
           All
         </label>
         <label class="flex items-center">
-          <input type="radio" name="color" value="red" bind:group={$filterStore.color} class="mr-2" />
+          <input type="radio" name="color" value="Red" bind:group={$filterStore.color} class="mr-2" />
           Red
         </label>
         <label class="flex items-center">
-          <input type="radio" name="color" value="blue" bind:group={$filterStore.color} class="mr-2" />
+          <input type="radio" name="color" value="Blue" bind:group={$filterStore.color} class="mr-2" />
           Blue
         </label>
         <label class="flex items-center">
-          <input type="radio" name="color" value="green" bind:group={$filterStore.color} class="mr-2" />
-          Green
+          <input type="radio" name="color" value="White" bind:group={$filterStore.color} class="mr-2" />
+          White
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="color" value="Black" bind:group={$filterStore.color} class="mr-2" />
+          Black
         </label>
       </div>
     </div>
@@ -111,7 +115,7 @@ const filteredProducts = derived([filterStore, products], ([$filterStore, $produ
         <div class="bg-white p-4 border rounded">
           <img src={product.image} alt={product.name} class="w-full h-48 object-cover mb-4 rounded" />
           <h3 class="text-lg font-semibold">{product.name}</h3>
-          <p class="text-sm text-gray-600">Category: {product.category}</p>
+          <p class="text-sm text-gray-600">{product.category}</p>
           <p class="text-lg font-bold text-gray-900">${product.price}</p>
         </div>
       {/each}
