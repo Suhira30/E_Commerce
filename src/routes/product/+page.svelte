@@ -49,7 +49,7 @@
       ($filterStore.category === 'all' || product.category === $filterStore.category) &&
       ($filterStore.color === 'all' || product.color === $filterStore.color)
     );
-    return filtered.sort((a, b) => a.price - b.price); // Sort by price in ascending order
+    return filtered.sort((a, b) => a.price - b.price);
   });
   const paginatedProducts = derived([filteredProducts, pageStore], ([$filteredProducts, $pageStore]) => {
     const page = parseInt($pageStore, 10) - 1;
