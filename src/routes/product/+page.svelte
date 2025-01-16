@@ -43,14 +43,14 @@
   onMount(fetchProducts);
 
   const filteredProducts = derived([filterStore, products], ([$filterStore, $products]) => {
-    return $products.filter((product) =>
+    const filtered = $products.filter((product) =>
       product.price >= $filterStore.minPrice &&
       product.price <= $filterStore.maxPrice &&
       ($filterStore.category === 'all' || product.category === $filterStore.category) &&
       ($filterStore.color === 'all' || product.color === $filterStore.color)
     );
+    return filtered.sort((a, b) => a.price - b.price); 
   });
-
   const paginatedProducts = derived([filteredProducts, pageStore], ([$filteredProducts, $pageStore]) => {
     const page = parseInt($pageStore, 10) - 1;
     const startIndex = page * itemsPerPage;
