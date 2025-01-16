@@ -8,7 +8,7 @@
   <div class="grid grid-cols-1 divide-y divide-transparent">
     <div class="h-screen items-center justify-center bg-gradient-to-r from-pink-500 to-purple-400 text-white grid grid-cols-6">
         <div class="h-screen col-span-6 md:col-span-3  flex flex-col items-center justify-center ">
-          <h1 class="text-6xl font-bold ml-20 mr-20">You have reached the right sales sight</h1>
+          <h1 class="text-6xl font-bold ml-20 mr-20">You have reached the right sales site</h1>
           <p class="text-xs sm:text-sm md:text-xs lg:text-sm ml-5 mr-5 sm:ml-10 sm:mr-10 md:ml-20 md:mr-20 mt-5 text-center md:text-left">
              Browse our site and find the latest technological models on the market, at the best possible price. Don't be left out of the technological future!
           </p>
