@@ -1,3 +1,36 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+/* 
+@layer components {
+    input[type="range"]::-webkit-slider-runnable-track {
+      background: #cd438b;
+      height: 8px;
+      border-radius: 5px;
+    }
+  
+    input[type="range"]::-webkit-slider-thumb {
+      background: #f13894; 
+      border: 2px solid #fff;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  
+    input[type="range"]::-moz-range-track {
+      background: #DA5597;
+      height: 8px;
+      border-radius: 5px;
+    }
+  
+    input[type="range"]::-moz-range-thumb {
+      background: #DA5597;
+      border: 2px solid #fff;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+   */

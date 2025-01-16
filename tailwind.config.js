@@ -28,7 +28,10 @@ export default {
 			'5xl': '3.052rem',
 			'6xl':'4rem',
 			'7xl':'5rem'
-		  }
+		  },
+		  content: [
+    		"./src/**/*.{svelte,js}", 
+  ]
 	},
 
 	plugins: [typography, forms, containerQueries]

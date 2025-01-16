@@ -7,8 +7,8 @@ import front from '$lib/assests/front.png'
         <div class="h-screen col-span-6 md:col-span-3 bg-gradient-to-r from-pink-500 to-purple-400 flex flex-col items-center justify-center">
           <h1 class="text-7xl font-bold ml-16">Find Your Beats Studio</h1>
           <a href="/product" class="mt-4">
-            <button class="bg-pink-800 text-lg font-medium py-2 px-6 rounded-full hover:bg-blue-700 transition ml-auto">
-              Shop Here !
+            <button class=" bg-purple-800 text-lg font-medium py-2 px-6 rounded-full hover:bg-purple-400  transition ml-auto">
+              <span class="">Shop Here !</span>
             </button>
           </a>
         </div>
