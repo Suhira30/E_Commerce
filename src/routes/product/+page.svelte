@@ -70,7 +70,7 @@
 </script>
 
 <main class="flex">
-  <div class="w-full sm:w-1/4 p-4 bg-purple-50 h-screen sticky top-0">
+  <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-4 bg-purple-50 h-screen sticky top-0">
     <div class="mb-4 mt-10 ml-4 mr-4">
       <label for="price-range" class="block text-sm font-medium text-black-400 ">Price Range</label>
       <input type="range" min="500" max="600000" step="5" bind:value={$filterStore.minPrice} class="w-full mt-2" />
@@ -123,9 +123,9 @@
         <img class="object-cover w-30 h-20 rounded-lg mb-5" src={logo} alt="Logo" >
         
     {#if $filteredProducts.length > 0}
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 ">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6  ">
         {#each $paginatedProducts as product}
-          <div class="bg-purple-100 p-4 border rounded-3xl">
+          <div class="bg-purple-100 p-4 border rounded-3xl  transition-transform transform hover:scale-105 hover:shadow-lg">
             <img src={product.image} alt="not founded" class="w-full h-48 object-cover mb-4 rounded" />
             <h3 class="text-lg font-semibold">{product.name}</h3>
             <p class="text-sm text-gray-600">{product.category}</p>
