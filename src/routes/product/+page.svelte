@@ -16,6 +16,8 @@
   const color = ['Black', 'White', 'Red', 'Blue'];
   const itemsPerPage = 12;
 
+  const sortOrder = writable('asc'); 
+  
   async function fetchProducts() {
     try {
       const response = await fetch('https://jsonplaceholder.typicode.com/photos');

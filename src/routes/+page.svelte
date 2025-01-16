@@ -1,8 +1,8 @@
 <script>
-import front from '$lib/assests/front.png'
-import headphone from '$lib/assests/headphone.jpg'
-import earbuds from '$lib/assests/earbuds.jpg'
-import speaker from '$lib/assests/speaker.jpg'
+  import front from '$lib/assests/front.png'
+  import headphone from '$lib/assests/headphone.jpg'
+  import earbuds from '$lib/assests/earbuds.jpg'
+  import speaker from '$lib/assests/speaker.jpg'
 </script>
 <main>
   <div class="grid grid-cols-1 divide-y divide-transparent">
@@ -13,32 +13,33 @@ import speaker from '$lib/assests/speaker.jpg'
             the market, at the best possible price. Don't be left out of the
             technological future!</p>
           <a href="/product">
-            <button class=" bg-purple-800 text-lg font-medium py-2 px-6 mt-5  rounded-full hover:bg-purple-100 hover:text-black  transition ml-auto">
+            <button class="bg-purple-800 text-lg font-medium py-2 px-6 mt-5 rounded-full hover:bg-purple-100 hover:text-black transition ml-auto">
               <span>Shop Here !</span>
             </button>
           </a>
         </div>
-        <div class="h-screen col-span-6 md:col-span-3 flex items-center justify-center   to-#983D47-300">
+        <div class="h-screen col-span-6 md:col-span-3 flex items-center justify-center to-#983D47-300">
             <img src={front} alt="" class="w-100 h-full object-cover hidden md:block">
         </div>
       </div>
-      <div class="h-screen p-6 bg-slate-50">
-       <!------------------------2nd view port---------------------------------------------------------------------> 
-        <h1 class=" text-center text-purple-800 text-3xl mb-4">Our Products</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-10">
-       <!-- Head phone ------------------------------------------------------------------------- -->
-          <div class="rounded-lg shadow-lg flex flex-col h-full"> 
-            <div class="h-2/4">
+
+
+      <div class="text-center p-6 h-screen">
+        <h1 class="text-purple-800 text-2xl sm:text-3xl md:text-4xl mb-4 font-bold">Our Products</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+
+          <div class="rounded-lg shadow-lg flex flex-col h-full">
+            <div class="h-48 sm:h-56 md:h-64">
               <img
                 src={headphone}
                 alt="Product 1"
                 class="object-cover w-full h-full rounded-t-lg"
               />
             </div>
-            <div class="h-1/3 p-4">
-              <h2 class="text-lg font-bold text-gray-800 px-4">Headphone</h2>
-              <p class="text-base text-gray-600 px-6 text-justify ">
-                nleash the power of premium sound with Headphones.
+            <div class="flex-grow p-4">
+              <h2 class="text-lg sm:text-base md:text-lg font-bold text-gray-800 px-4">Headphone</h2>
+              <p class="text-sm sm:text-base md:text-lg text-gray-600 px-6 text-justify leading-relaxed">
+                Unleash the power of premium sound with Headphones.
                 Designed for audiophiles and everyday listeners alike, these
                 headphones deliver exceptional sound quality, from rich bass to
                 crisp highs. Whether you're enjoying music, gaming, or making calls,
@@ -46,56 +47,54 @@ import speaker from '$lib/assests/speaker.jpg'
               </p>
             </div>
           </div>
-         <!-- Ear buds ------------------------------------------------------------------------- -->
-          <div class=" rounded-lg shadow-lg flex flex-col">
-            <div class="h-2/4">
+      
+          <div class="rounded-lg shadow-lg flex flex-col h-full">
+            <div class="h-48 sm:h-56 md:h-64">
               <img
                 src={earbuds}
                 alt="Ear buds"
                 class="object-cover w-full h-full rounded-t-lg"
               />
             </div>
-            <div class="h-2/4 p-4">
-              <h2 class="text-lg font-bold text-gray-800 px-4">Ear buds</h2>
-              <p class="text-base text-gray-600 px-6 text-justify ">
+            <div class="flex-grow p-4">
+              <h2 class="text-lg sm:text-base md:text-lg font-bold text-gray-800 px-4">Earbuds</h2>
+              <p class="text-sm sm:text-base md:text-lg text-gray-600 px-6 text-justify leading-relaxed">
                 Immerse yourself in premium sound quality with Earbuds.
-                 Whether you're working out, commuting, or relaxing, these earbuds deliver
-                 crystal-clear audio and deep bass, making every moment an auditory delight.
-                 Designed for comfort, they fit snugly in your ears and stay securely in place,
-                 even during intense movement. 
+                Whether you're working out, commuting, or relaxing, these earbuds deliver
+                crystal-clear audio and deep bass, making every moment an auditory delight.
+                Designed for comfort, they fit snugly in your ears and stay securely in place,
+                even during intense movement.
               </p>
             </div>
           </div>
       
-          <!-- Wireless speakers------------------------------------------------------------ -->
-          <div class=" rounded-lg shadow-lg flex flex-col">
-            <div class="h-2/4">
+          <div class="rounded-lg shadow-lg flex flex-col h-full">
+            <div class="h-48 sm:h-56 md:h-64">
               <img
                 src={speaker}
                 alt="Product 3"
                 class="object-cover w-full h-full rounded-t-lg"
               />
             </div>
-            <div class="h-1/3 p-4">
-              <h2 class="text-lg font-bold text-gray-800 px-4">Wireless Speaker</h2>
-              <p class="text-base text-gray-600 px-6 text-justify ">
-                Take your music wherever you go with the  Wireless Speaker.
+            <div class="flex-grow p-4">
+              <h2 class="text-lg sm:text-base md:text-lg font-bold text-gray-800 px-4">Wireless Speaker</h2>
+              <p class="text-sm sm:text-base md:text-lg text-gray-600 px-6 text-justify leading-relaxed">
+                Take your music wherever you go with the Wireless Speaker.
                 Engineered to deliver rich, full-bodied sound with impressive bass,
                 this portable speaker brings your tunes to life, whether you're at a party,
                 on a hike, or just relaxing at home. With advanced Bluetooth technology and
-                a sleek design, the Wireless Speaker is your perfect companion for any occasion
+                a sleek design, the Wireless Speaker is your perfect companion for any occasion.
               </p>
             </div>
           </div>
         </div>
       </div>
       
-
   </div>
 </main>
 
 <style lang="postcss">
   :global(html) {
-    background-color: theme(colors.gray.100);
+    background-color: salate-50;
   }
 </style>
